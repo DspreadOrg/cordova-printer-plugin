@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="posPrinterPlugin" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>dspread_pos_printer_plugin</name>
+    <js-module name="dspread_pos_printer_plugin" src="www/dspread_pos_printer_plugin.js">
+        <clobbers target="cordova.plugins.dspread_pos_printer_plugin" />
+    </js-module>
+    <platform name="android">
+        <framework src="src/android/printer.gradle" custom="true" type="gradleReference" />
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="dspread_pos_printer_plugin">
+                <param name="android-package" value="org.apache.cordova.posPrinterPlugin.dspread_pos_printer_plugin" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+        </config-file>
+        <source-file src="src/android/dspread_pos_printer_plugin.java" target-dir="src/org/apache/cordova/posPrinterPlugin" />
+        <source-file src="src/android/TRACE.java" target-dir="src/org/apache/cordova/posPrinterPlugin" />
+        <source-file src="src/android/assets/EnumPrinter.js" target-dir="assets/www/js" />
+    </platform>
+</plugin>

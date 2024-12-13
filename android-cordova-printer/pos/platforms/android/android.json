@@ -1,0 +1,44 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "res/xml/config.xml": {
+        "parents": {
+          "/*": [
+            {
+              "xml": "<feature name=\"dspread_pos_printer_plugin\"><param name=\"android-package\" value=\"org.apache.cordova.posPrinterPlugin.dspread_pos_printer_plugin\" /></feature>",
+              "count": 1
+            }
+          ]
+        }
+      },
+      "AndroidManifest.xml": {
+        "parents": {
+          "/*": []
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "posPrinterPlugin": {
+      "PACKAGE_NAME": "com.pos.demoui"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [
+    {
+      "id": "posPrinterPlugin.dspread_pos_printer_plugin",
+      "file": "plugins/posPrinterPlugin/www/dspread_pos_printer_plugin.js",
+      "pluginId": "posPrinterPlugin",
+      "clobbers": [
+        "cordova.plugins.dspread_pos_printer_plugin"
+      ]
+    }
+  ],
+  "plugin_metadata": {
+    "posPrinterPlugin": "1.0.0"
+  }
+}

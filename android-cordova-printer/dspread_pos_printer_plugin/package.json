@@ -1,0 +1,17 @@
+{
+  "name": "dspread_pos_printer_plugin",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "posPrinterPlugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "mamengqiu",
+  "license": "ISC"
+}

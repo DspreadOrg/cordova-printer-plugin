@@ -1,0 +1,15 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "posPrinterPlugin": {
+      "PACKAGE_NAME": "com.pos.demoui"
+    }
+  },
+  "dependent_plugins": {}
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<h2 style="text-align:center;">Dspread</h2>
+<div>
+    <button onclick="initPrinter()" class="ButtonStyle">initPrinter</button>
+    <button onclick="printText()" class="ButtonStyle">printText</button>
+    <button onclick="printBarCode()" class="ButtonStyle">printBarCode</button>
+    <button onclick="printQRCode()" class="ButtonStyle">printQRCode</button>
+    <button onclick="printBitmap()" class="ButtonStyle">printBitmap</button>
+    <button onclick="print()" class="ButtonStyle">print</button>
+    <button onclick="setPrinter()" class="ButtonStyle" style="display:none">setPrinter</button>
+    <button onclick="getStatus()" class="ButtonStyle">getStatus</button>
+
+
+</div>
+<div  id="tablediv" class="layui-table-body layui-table-main" style="height:300px;margin-top:10px;" >
+    <table class="layui-table" lay-skin="line" style="overflow:auto; margin-top:10px; width:100%; text-align:left; border-collapse:separate; border-spacing:0px 10px;" id="bluTable">
+        <colgroup>
+            <col width="150">
+            <col width="150">
+            <col width="200">
+            <col>
+        </colgroup>
+        <thead>
+        <tr>
+            <th>Bluetooth Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+<textarea id="posResult" style="overflow:scroll; overflow-x:hidden; height:350px;width:100%; margin-top: 10px;" readonly></textarea>
+
+<script language=javascript type="text/javascript"></script>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/index.js">
+</script>
+
+<script type="text/javascript" src="js/EnumPrinter.js"></script>
+<script type="text/javascript" src="js/printer.js"></script>
+
+
+</body>
+</html>
