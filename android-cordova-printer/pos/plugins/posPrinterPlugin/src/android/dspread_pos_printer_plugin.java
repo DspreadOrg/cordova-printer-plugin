@@ -84,6 +84,11 @@ public class dspread_pos_printer_plugin extends CordovaPlugin {
             } else {
                 mPrinter.initPrinter(mContext);
             }
+        } else if (action.equals("close")) {
+            TRACE.d("close");
+            if(mPrinter!=null) {
+                mPrinter.close();
+            }
         } else if (action.equals("setAlign")) {
             TRACE.d("setAlign");
             String align = args.getString(0);

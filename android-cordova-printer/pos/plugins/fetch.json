@@ -2,7 +2,7 @@
   "posPrinterPlugin": {
     "source": {
       "type": "local",
-      "path": "D:\\workProject\\android-cordova\\pos\\node_modules\\dspread_pos_printer_plugin"
+      "path": "D:\\gitlab\\cordovaprinter\\android-cordova-printer\\pos\\node_modules\\dspread_pos_printer_plugin"
     },
     "is_top_level": true,
     "variables": {}

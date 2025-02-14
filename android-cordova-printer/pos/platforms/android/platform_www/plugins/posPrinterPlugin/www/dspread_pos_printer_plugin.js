@@ -10,6 +10,10 @@ var posPrinterPlug = {
         exec(success,fail,"dspread_pos_printer_plugin","initPrinter",[]);
     },
 
+    close:function(success,fail){
+        exec(success,fail,"dspread_pos_printer_plugin","close",[]);
+    },
+
     setAlign:function(success,fail,align){
         exec(success,fail,"dspread_pos_printer_plugin","setAlign",[align]);
     },
