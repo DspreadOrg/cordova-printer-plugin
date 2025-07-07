@@ -10,6 +10,6 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     }
   ];
   module.exports.metadata = {
-    "posPrinterPlugin": "1.0.1"
+    "posPrinterPlugin": "1.0.2"
   };
 });
