@@ -21,16 +21,16 @@ function initPrinter(){
 }
 
 function closePrinter(){
-    tabled.style.display = 'block';
-    txtresult.style.display = 'none';
-    console.log("close");
-    cordova.plugins.dspread_pos_printer_plugin.close(function(message){
-      console.log("success: " +message);
-      posresult(message);
-    },function(message){
-       console.log("fail: " +message);
-       posresult(message);
-    });
+  tabled.style.display = 'block';
+  txtresult.style.display = 'none';
+  console.log("close");
+  cordova.plugins.dspread_pos_printer_plugin.close(function(message){
+    console.log("success: " +message);
+    posresult(message);
+  },function(message){
+     console.log("fail: " +message);
+     posresult(message);
+  });
 }
 
 function printText(){

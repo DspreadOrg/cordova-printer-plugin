@@ -1,0 +1,22 @@
+// dspread_pos_printer_plugin custom gradle extension
+// Auto-applied via plugin.xml: <framework custom="true" type="gradleReference">
+
+repositories {
+    jcenter()
+    maven { url "https://jitpack.io" }
+    maven {
+        url 'https://gitlab.com/api/v4/projects/4128550/packages/maven'
+    }
+}
+
+dependencies {
+    // Fallback fileTree so any *.aar under libs is picked up in addition to <lib-file> entries.
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+}
+
+android {
+    packagingOptions {
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+    }
+}

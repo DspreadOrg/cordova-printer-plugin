@@ -1,6 +1,6 @@
 {
   "name": "dspread_pos_printer_plugin",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
   "cordova": {
     "id": "posPrinterPlugin",

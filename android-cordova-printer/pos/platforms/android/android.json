@@ -14,11 +14,6 @@
             }
           ]
         }
-      },
-      "AndroidManifest.xml": {
-        "parents": {
-          "/*": []
-        }
       }
     }
   },
@@ -39,6 +34,6 @@
     }
   ],
   "plugin_metadata": {
-    "posPrinterPlugin": "1.0.2"
+    "posPrinterPlugin": "1.0.3"
   }
 }
