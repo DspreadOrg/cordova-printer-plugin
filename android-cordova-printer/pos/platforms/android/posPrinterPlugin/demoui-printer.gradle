@@ -2,6 +2,9 @@
 // Auto-applied via plugin.xml: <framework custom="true" type="gradleReference">
 
 repositories {
+    flatDir {
+        dirs 'libs'
+    }
     mavenCentral()
     maven { url "https://jitpack.io" }
     maven {
@@ -10,8 +13,10 @@ repositories {
 }
 
 dependencies {
-    // Fallback fileTree so any *.aar under libs is picked up in addition to <lib-file> entries.
-    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    fileTree(dir: 'libs', include: ['dspread_print_sdk-*.aar']).each { File aar ->
+        def baseName = aar.name.take(aar.name.lastIndexOf('.'))
+        implementation(name: baseName, ext: 'aar')
+    }
 }
 
 android {
